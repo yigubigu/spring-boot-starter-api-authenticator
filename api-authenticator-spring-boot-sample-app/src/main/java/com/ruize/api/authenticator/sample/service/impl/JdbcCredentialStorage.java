@@ -5,6 +5,7 @@ import com.ruize.api.authenticator.sample.mapper.UserApiMapper;
 import com.ruize.api.authenticator.service.CredentialStorage;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -15,6 +16,7 @@ public class JdbcCredentialStorage implements CredentialStorage {
     private UserApiMapper userApiMapper;
 
     @Override
+    @Cacheable(value="userAai", key="#appId")
     public String getPasswordByAppId(String appId) {
         UserApi userApi = userApiMapper.selectById(appId);
         if(userApi == null) {
