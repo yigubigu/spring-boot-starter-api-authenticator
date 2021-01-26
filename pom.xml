@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.ruize.api.authenticator</groupId>
+    <artifactId>spring-boot-starter-api-authenticator</artifactId>
+    <version>${api.authenticator.version}</version>
+    <name>spring-boot-starter-api-authenticator</name>
+    <packaging>pom</packaging>
+    <!-- FIXME change it to the project's website -->
+    <url>http://www.example.com</url>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <api.authenticator.version>1.0</api.authenticator.version>
+        <spring-boot.version>2.2.6.RELEASE</spring-boot.version>
+    </properties>
+    <modules>
+        <module>api-authenticator</module>
+        <module>api-authenticator-spring-boot-autoconfig</module>
+        <module>api-authenticator-spring-boot-starter</module>
+        <module>api-authenticator-spring-boot-sample-app</module>
+    </modules>
+</project>

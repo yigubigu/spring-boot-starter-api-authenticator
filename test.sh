@@ -1,0 +1,1 @@
+curl -H "appId:21Cake.new_key" -H "timestamp:1611638538432" -H "token:/R0DS4br3yK5pKzpa1KuqzWKCI2IM34AQdTVeu1VAX8=" -H "requestUuid:122" http://localhost:8080/api/v1/books
